@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:posts;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+    validationQuery: SELECT 1
+    platform: h2
+  jpa:
+    open-in-view: false
+    generate-ddl: false
+    hibernate:
+      dll-auto: create-drop
+    properties:
+      hibernate:
+        id:
+          new_generator_mappings: false
+        order_inserts: true
+        order_updates: true
+        show_sql: true
+        format_sql: false
+        generate_statistics: false
+        jdbc:
+          batch_size: 20
+          batch_versioned_data: true
+        dialect: org.hibernate.dialect.H2Dialect

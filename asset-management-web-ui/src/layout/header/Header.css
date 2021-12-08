@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  margin-bottom: 1rem;
+  background-color: #cf2338;
+}
+
+.main-header p {
+  padding: 1.2em 1.4em;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+header .container {
+    margin-top: inherit;
+    display: flex;
+}
+header #dropdown-basic-button{
+  margin-top: 17px;
+    background-color: #cf2338;
+    border-color: #cf2338;
+}
+header #user-infor-optional{
+  color: black;
+}
+.custom-dropdown:active{
+  background-color: #CF2338 !important;
+  color: #fff;
+}

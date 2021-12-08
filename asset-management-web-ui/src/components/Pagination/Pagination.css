@@ -1,0 +1,6 @@
+.pagination{
+    float:right;
+}
+.pagination li a{
+    color: red;
+}

@@ -1,0 +1,20 @@
+diff --git a/node_modules/reactjs-popup/dist/reactjs-popup.esm.js b/node_modules/reactjs-popup/dist/reactjs-popup.esm.js
+index c354ab5..ba16193 100644
+--- a/node_modules/reactjs-popup/dist/reactjs-popup.esm.js
++++ b/node_modules/reactjs-popup/dist/reactjs-popup.esm.js
+@@ -1,4 +1,5 @@
+-import React, { useEffect, useLayoutEffect, forwardRef, useState, useRef, useImperativeHandle } from 'react';
++import React, { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
++
+ import ReactDOM from 'react-dom';
+ 
+ function _extends() {
+@@ -520,7 +521,7 @@ var Popup = /*#__PURE__*/forwardRef(function (_ref, ref) {
+ 
+   useTabbing(contentRef, isOpen && isModal);
+   useRepositionOnResize(setPosition, repositionOnResize);
+-  useOnClickOutside(!!trigger ? [contentRef, triggerRef] : [contentRef], closePopup, closeOnDocumentClick && !nested); // we need to add a ne
++  //  useOnClickOutside(!!trigger ? [contentRef, triggerRef] : [contentRef], closePopup, closeOnDocumentClick && !nested); // we need to add a ne
+   // render the trigger element and add events
+ 
+   var renderTrigger = function renderTrigger() {
